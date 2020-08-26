@@ -1,0 +1,319 @@
+*{margin: 0;padding: 0;}
+
+
+
+.top {
+    width: 1920px;
+    height: 115.91px;
+    background-color: black;
+    color: white;
+}
+
+.top-logo img {
+        padding-top: 34px;
+        padding-left: 140px;
+        width: 137px;
+        height: 48px;
+    }
+
+.top-content{
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+    color: #847C7C;
+    font-family: 'Work Sans', sans-serif;
+}
+.trangchu {
+    width: 143px;
+    height: 110.9px;
+    position: absolute;
+    left: 343px;
+    top: 0;
+
+}
+
+
+    .top-content.tc{
+        width: 143px;
+        height: 40px;
+        position: absolute;
+        top: 36px;
+        left: 2px;
+        text-decoration: none;
+    }
+
+    .trangchu:hover{
+        cursor: pointer;
+        border-bottom: 5px solid #D00505;
+    }
+    .video {
+        width: 143px;
+        height: 110.9px;
+        position: absolute;
+        left: 520px;
+        top: 0;
+    }
+  
+    
+    .top-content.vi {
+        width: 82px;
+        height: 35px;
+        position: absolute;
+        top: 36px;
+        left: 35px;
+        text-decoration: none;
+    } 
+    .video:hover{
+        border-bottom: 5px solid #D00505;
+        cursor: pointer;
+    }
+    .chuongtrinh {
+        border-bottom: 5px solid #D00505;
+        width: 189px;
+        height: 110.9px;
+        position: absolute;
+        left: 705px;
+        top: 0;
+    }
+
+    .top-content.ct {
+        width: 189px;
+        height: 40px;
+        position: absolute;
+        top: 36px;
+        left: 3px;
+        text-decoration: none;
+    }
+    .chuongtrinh:hover{
+        cursor: pointer;
+        border-bottom: 5px solid #D00505;
+    }
+
+    .top-content.tinnong {
+        width: 126px;
+        height: 35px;
+        position: absolute;
+        top: 36px;
+        left: 965px;
+    }
+    
+    .top-content.lienhe {
+        width: 106px;
+        height: 40px;
+        position: absolute;
+        top: 36px;
+        left: 1160px;
+    }
+   
+.search {
+        width: 333px;
+        height: 48px;
+        position: absolute;
+        left: 1382.47px;
+        top: 34px;
+        border: 1px solid#444444;
+        border-radius: 32px;
+        background-color: #444444;
+}
+    
+    .search h5 {
+        width: 107px;
+        height: 32px;
+        color: #847C7C;
+        font-size: 24px;
+        line-height: 28px;
+        font-family: 'Work Sans',sans-serif;
+        position: absolute;
+        top: 10px;
+        left: 22.53px;
+    }
+    
+    
+    .search img {
+        width: 33.47px;
+        height: 33.47px;
+        position: absolute;
+        right: 1px;
+        top: 7px;
+    }
+.account {
+        width: 49px;
+        height: 49px;
+        position: absolute;
+        top: 34px;
+        left: 1731px;
+}
+.center {
+    width: 1920px;
+    height: 1327px;
+    background-color: #444444;
+    position: relative;
+}
+.center img {
+    position: absolute;
+    top: 45.09px;
+    left: 416px;
+}
+
+.person img {
+    width: 64px;
+    height: 64px;
+    margin-left: -403px;
+    margin-top: -31px;
+}
+
+.time img {
+    width: 16px;
+    height: 15px;
+    margin-top: -43px;
+    margin-left: -414px;
+    left: -16px;
+}
+
+.gtp {
+    width: 318px;
+    height: 46px;
+    position: absolute;
+    top: 691px;
+    left: 416px;
+    text-align: left;
+    font: Bold 24px/28px Work Sans;
+    color: white;
+}
+.center .time {
+    width: 100%;
+    height: 21px;
+    position: absolute;
+    top: 731px;
+    left: 416px;
+}
+.time span {
+    margin-left: 23px;
+    color: #FFFFFF;
+    font: 16px/19px Work Sans;
+}
+
+.comment {
+    width: 159px;
+    height: 36px;
+    position: absolute;
+    top: 779px;
+    left: 416px;
+    background: #D00505;
+    border-radius: 18px;
+    text-align: left;
+    font: Bold 14px/35px Work Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    text-align: center;
+}
+.comment-content {
+    background-color: #847C7C;
+    width: 812px;
+    height: 365px;
+    position: absolute;
+    top: 828px;
+    left: 416px;
+    border-radius: 12px;
+}
+.person {
+    width: 709px;
+    height: 107px;
+    top: 17px;
+    left: 14px;
+    /* background: blue; */
+    position: relative;
+}
+.person .name {
+    width: 170px;
+    height: 32px;
+    margin-left: 90px;
+    padding-top: 25px;
+    color: white;
+    text-align: left;
+    font: Bold 24px/20px Work Sans;
+}
+.person .cmt {
+    width: 619px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font: 16px/36px Work Sans;
+    color: white;
+}
+.your-cmt {
+    width: 758px;
+    height: 59px;
+    position: absolute;
+    left: 27px;
+    bottom: 43px;
+    background-color: #000000;
+    border-radius: 30px;
+    color: white;
+}
+.your-cmt img {
+    width: 24px;
+    height: 24px;
+    margin-top: -32px;
+    margin-left: -385px;
+    text-align: left;
+    font: 12px/16px Work Sans;
+}
+
+.your-cmt h6 {
+    width: 104px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    left: 61px;
+}
+.bottom {
+    width: 1920px;
+    height: 373px;
+    background: #000000;
+    color: #F7F7F7;
+    position: relative;
+}
+
+.bottom-info {
+    width: 950px;
+    height: 260px;
+    position: absolute;
+    left: 140px;
+    top: 65px;
+}
+.bottom-info h5 {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+    height: 37px;
+    text-align: left;
+    font: Bold 28px/28px Work Sans;
+}
+
+.bottom-info p {
+    width: 100%;
+    height: 32px;
+    width: 100%;
+    height: 32px;
+    text-align: left;
+    font: 24px/28px Work Sans;
+}
+
+.bottom-duoi {
+    margin-top: 66px;
+}
+
+
+
+
+
+
+
+
+
+

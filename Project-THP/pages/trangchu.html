@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THP</title>
+    <link rel="stylesheet" href="../css/trangchu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+    <div class="top">
+       <div class="top-logo"> <img src="../images/logo.png" alt="logo"></div>
+       <div class="trangchu"><a href="index.html" class="top-content tc">Trang chủ</a></div>
+       <div class="video"><a href="video.html" class="top-content vi">Video</a></div>
+       <div class="chuongtrinh"> <a href="chuongtrinh.html" class="top-content ct">Chương trình</a> </div>
+       <div class="top-content tinnong">Tin nóng</div>
+       <div class="top-content lienhe">Liên hệ</div>
+       <div class="search">
+           <h5>Tìm kiếm</h5>
+           <img src="../images/search.png" alt="">
+       </div>
+       <div class="account"><img src="../images/account.png" alt=""></div>
+    </div>
+<div class="center">
+        <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+        <video id="video" controls></video>
+        <script>
+        if(Hls.isSupported())
+        {
+            var video = document.getElementById('video');
+            var hls = new Hls();
+            hls.loadSource('https://live.tuyenquangtv.vn/hls/ttv.m3u8');
+            hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED,function()
+            {
+                video.play();
+            });
+        }
+        else if (video.canPlayType('application/vnd.Apple.mpegurl'))
+        {
+            video.src = 'https://live.tuyenquangtv.vn/hls/ttv.m3u8';
+            video.addEventListener('canplay',function()
+            {
+                video.play();
+            });
+        }
+        </script>
+<div class="lich">
+            <div class="lich-ps">
+                <img src="../images/appointment.png" alt="">
+                <h5>Lịch phát sóng</h5>    
+            </div>
+            <div class="ngay">
+                <img class="next-left" src="../images/next-left.png" alt="">
+                <h6>Ngày 15/06/2020</h6>
+                <img class="next-right" src="../images/next-right.png" alt="">
+            </div>
+            <div class="thoisu">
+                <div class="time">7:00</div>
+                <div class="title">Thời sự</div>
+                <div class="categoryName">Bản tin thời sự ngày</div>
+            </div>
+            
+        </div>
+</div>
+    <div class="logo">
+       <div class="index-logo thp1">
+           <img src="../images/bottom-logo-1.png" alt="">
+       </div>
+       <div class="index-logo thp2">
+           <img src="../images/bottom-logo-2.png" alt="">
+       </div>
+       <div class="index-logo radio1">
+           <img src="../images/bottom-logo-3.png" alt="">
+       </div>
+       <div class="index-logo radio2">
+        <img src="../images/bottom-logo-3.png" alt="">
+       </div>
+    </div>
+    <div class="clipxemnhieu">
+           <h1>Clip xem nhiều nhất</h1>
+           <div class="bonvideo">
+           <div class="khoi p1">
+                <div class="khoi-tren">
+                   
+                </div>
+                <div class="khoi-duoi">
+                   <h4>10 phút vàng</h4>
+                    <h5>10 phút vàng (15/06/2020)</h5>
+                    <div class="next-right">
+                        <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="khoi p2">
+               <div class="khoi-tren">
+                  
+               </div>
+               <div class="khoi-duoi">
+                  <h4>10 phút vàng</h4>
+                   <h5>10 phút vàng (15/06/2020)</h5>
+                   <div class="next-right">
+                        <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+                    </div>
+               </div>
+           </div>
+           <div class="khoi p3">
+               <div class="khoi-tren">
+                  
+               </div>
+               <div class="khoi-duoi">
+                  <h4>10 phút vàng</h4>
+                   <h5>10 phút vàng (15/06/2020)</h5>
+                   <div class="next-right">
+                        <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+                    </div>
+               </div>
+           </div>
+           <div class="khoi p4">
+               <div class="khoi-tren">
+                  
+               </div>
+               <div class="khoi-duoi">
+                  <h4>10 phút vàng</h4>
+                   <h5>10 phút vàng (15/06/2020)</h5>
+                   <div class="next-right">
+                        <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+                    </div>
+               </div>
+           </div>
+        </div> 
+    </div>
+    <div class="four-video">
+        <h1>Văn hóa xã hội</h1>
+        <div class="bonvideo">
+        <div class="khoi p1">
+             <div class="khoi-tren">
+                
+             </div>
+             <div class="khoi-duoi">
+                <h4>10 phút vàng</h4>
+                 <h5>10 phút vàng (15/06/2020)</h5>
+                 <div class="next-right">
+                     <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+                 </div>
+             </div>
+         </div>
+         <div class="khoi p2">
+            <div class="khoi-tren">
+               
+            </div>
+            <div class="khoi-duoi">
+               <h4>10 phút vàng</h4>
+                <h5>10 phút vàng (15/06/2020)</h5>
+                <div class="next-right">
+                     <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+                 </div>
+            </div>
+        </div>
+        <div class="khoi p3">
+            <div class="khoi-tren">
+               
+            </div>
+            <div class="khoi-duoi">
+               <h4>10 phút vàng</h4>
+                <h5>10 phút vàng (15/06/2020)</h5>
+                <div class="next-right">
+                     <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+                 </div>
+            </div>
+        </div>
+        <div class="khoi p4">
+            <div class="khoi-tren">
+               
+            </div>
+            <div class="khoi-duoi">
+               <h4>10 phút vàng</h4>
+                <h5>10 phút vàng (15/06/2020)</h5>
+                <div class="next-right">
+                     <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+                 </div>
+            </div>
+        </div>
+     </div> 
+ </div>
+ <div class="anh-index dlqg">
+     <img src="..//images/dlqg.png" alt="">
+ </div>
+ <div class="kinhte">
+     <h1>Kinh tế</h1>
+     <div class="khoi">
+         <div class="khoi-trai">
+        <div class="khoi-tren">
+           
+        </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="trai-icon">
+                <i style="width: 26px;height: 57px;color: white;font-size: 110px;margin: -15px 28px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+        
+    </div>
+    <div class="khoi-phai">
+        <div class="khoi1">
+        <div class="khoi-tren t1" > </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                <i style="width: 26px;height: 57px;color: white;font-size: 45px;margin: -6px 12px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+    <div class="khoi1" >
+        <div class="khoi-tren t2" > </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                <i style="width: 26px;height: 57px;color: white;font-size: 45px;margin: -6px 12px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="khoi-tren t3"> </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                <i style="width: 26px;height: 57px;color: white;font-size: 45px;margin: -6px 12px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="khoi-tren t4"> </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                <i style="width: 26px;height: 57px;color: white;font-size: 45px;margin: -6px 12px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+    <div class="four-video">
+        <h1>Văn nghệ</h1>
+        <div class="bonvideo">
+        <div class="khoi p1">
+             <div class="khoi-tren">
+                
+             </div>
+             <div class="khoi-duoi">
+                <h4>10 phút vàng</h4>
+                 <h5>10 phút vàng (15/06/2020)</h5>
+                 <div class="next-right">
+                     <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+                 </div>
+             </div>
+         </div>
+         <div class="khoi p2">
+            <div class="khoi-tren">
+               
+            </div>
+            <div class="khoi-duoi">
+               <h4>10 phút vàng</h4>
+                <h5>10 phút vàng (15/06/2020)</h5>
+                <div class="next-right">
+                     <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+                 </div>
+            </div>
+        </div>
+        <div class="khoi p3">
+            <div class="khoi-tren">
+               
+            </div>
+            <div class="khoi-duoi">
+               <h4>10 phút vàng</h4>
+                <h5>10 phút vàng (15/06/2020)</h5>
+                <div class="next-right">
+                     <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+                 </div>
+            </div>
+        </div>
+        <div class="khoi p4">
+            <div class="khoi-tren">
+               
+            </div>
+            <div class="khoi-duoi">
+               <h4>10 phút vàng</h4>
+                <h5>10 phút vàng (15/06/2020)</h5>
+                <div class="next-right">
+                     <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+                 </div>
+            </div>
+        </div>
+     </div> 
+ </div>
+ <div class="anh-index bdg">
+    <img src="..//images/bdg.png" alt="">
+</div>
+<div class="four-video">
+    <h1>Phóng sự</h1>
+    <div class="bonvideo">
+    <div class="khoi p1">
+         <div class="khoi-tren">
+            
+         </div>
+         <div class="khoi-duoi">
+            <h4>10 phút vàng</h4>
+             <h5>10 phút vàng (15/06/2020)</h5>
+             <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+         </div>
+     </div>
+     <div class="khoi p2">
+        <div class="khoi-tren">
+           
+        </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+    <div class="khoi p3">
+        <div class="khoi-tren">
+           
+        </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+    <div class="khoi p4">
+        <div class="khoi-tren">
+           
+        </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+ </div> 
+</div>
+<div class="four-video">
+    <h1>Hộp thư truyền hình</h1>
+    <div class="bonvideo">
+    <div class="khoi p1">
+         <div class="khoi-tren">
+            
+         </div>
+         <div class="khoi-duoi">
+            <h4>10 phút vàng</h4>
+             <h5>10 phút vàng (15/06/2020)</h5>
+             <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+         </div>
+     </div>
+     <div class="khoi p2">
+        <div class="khoi-tren">
+           
+        </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+    <div class="khoi p3">
+        <div class="khoi-tren">
+           
+        </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+    <div class="khoi p4">
+        <div class="khoi-tren">
+           
+        </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+ </div> 
+</div>
+<div class="anh-index atgt">
+    <img src="..//images/atgt.png" alt="">
+</div>
+<div class="four-video">
+    <h1>Phóng sự</h1>
+    <div class="bonvideo">
+    <div class="khoi p1">
+         <div class="khoi-tren">
+            
+         </div>
+         <div class="khoi-duoi">
+            <h4>10 phút vàng</h4>
+             <h5>10 phút vàng (15/06/2020)</h5>
+             <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+         </div>
+     </div>
+     <div class="khoi p2">
+        <div class="khoi-tren">
+           
+        </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+    <div class="khoi p3">
+        <div class="khoi-tren">
+           
+        </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+    <div class="khoi p4">
+        <div class="khoi-tren">
+           
+        </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+ </div> 
+</div>
+<div class="four-video cuoi">
+    <h1>Hộp thư truyền hình</h1>
+    <div class="bonvideo">
+    <div class="khoi p1">
+         <div class="khoi-tren">
+            
+         </div>
+         <div class="khoi-duoi">
+            <h4>10 phút vàng</h4>
+             <h5>10 phút vàng (15/06/2020)</h5>
+             <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+         </div>
+     </div>
+     <div class="khoi p2">
+        <div class="khoi-tren">
+           
+        </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+    <div class="khoi p3">
+        <div class="khoi-tren">
+           
+        </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+    <div class="khoi p4">
+        <div class="khoi-tren">
+           
+        </div>
+        <div class="khoi-duoi">
+           <h4>10 phút vàng</h4>
+            <h5>10 phút vàng (15/06/2020)</h5>
+            <div class="next-right">
+                 <i style="width: 20px;height: 20px;color: white;font-size: 46px;margin: -6px 10px;" class="fas fa-caret-right"></i>
+             </div>
+        </div>
+    </div>
+ </div> 
+</div>
+<div class="index-bottom">
+    <div class="index-bottom-info">
+        <h5>ĐÀI PHÁT THANH VÀ TRUYỀN HÌNH HẢI PHÒNG </h5>
+       <div class="index-bottom-duoi">
+       <p>Trang thông tin điện tử Đài Phát thanh - Truyền hình Hải Phòng.   </p>
+       <p> Giấy phép: 283/GP-TTĐT cấp ngày 01/9/2017 </p>
+       <p>Tổng biên tập: Phạm Văn Tuấn</p>  
+       <p>Trụ sở: Số 2 Nguyễn Bình, Phường Kênh Dương, Quận Lê Chân, Hải Phòng</p>  
+       <p>Điện thoại: 0225840379 - Email: daiptth@haiphong.gov.vn</p> </div>
+     
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,315 @@
+*{margin: 0;padding: 0;}
+
+
+
+.top {
+    width: 1920px;
+    height: 115.91px;
+    background-color: black;
+    color: white;
+}
+
+.top-logo img {
+        padding-top: 34px;
+        padding-left: 140px;
+        width: 137px;
+        height: 48px;
+    }
+
+.top-content{
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+    color: #847C7C;
+    font-family: 'Work Sans', sans-serif;
+}
+.trangchu {
+    width: 143px;
+    height: 110.9px;
+    position: absolute;
+    left: 343px;
+    top: 0;
+
+}
+
+
+    .top-content.tc{
+        width: 143px;
+        height: 40px;
+        position: absolute;
+        top: 36px;
+        left: 2px;
+        text-decoration: none;
+    }
+
+    .trangchu:hover{
+        cursor: pointer;
+        border-bottom: 5px solid #D00505;
+    }
+    .video {
+        border-bottom: 5px solid #D00505;
+        width: 143px;
+        height: 110.9px;
+        position: absolute;
+        left: 520px;
+        top: 0;
+    }
+  
+    
+    .top-content.vi {
+        width: 82px;
+        height: 35px;
+        position: absolute;
+        top: 36px;
+        left: 35px;
+        text-decoration: none;
+    } 
+    .video:hover{
+      
+        cursor: pointer;
+    }
+    .chuongtrinh {
+        width: 189px;
+        height: 110.9px;
+        position: absolute;
+        left: 705px;
+        top: 0;
+    }
+
+    .top-content.ct {
+        width: 189px;
+        height: 40px;
+        position: absolute;
+        top: 36px;
+        left: 3px;
+        text-decoration: none;
+    }
+    .chuongtrinh:hover{
+        cursor: pointer;
+        border-bottom: 5px solid #D00505;
+    }
+
+    .top-content.tinnong {
+        width: 126px;
+        height: 35px;
+        position: absolute;
+        top: 36px;
+        left: 965px;
+    }
+    
+    .top-content.lienhe {
+        width: 106px;
+        height: 40px;
+        position: absolute;
+        top: 36px;
+        left: 1160px;
+    }
+   
+.search {
+        width: 333px;
+        height: 48px;
+        position: absolute;
+        left: 1382.47px;
+        top: 34px;
+        border: 1px solid#444444;
+        border-radius: 32px;
+        background-color: #444444;
+}
+    
+    .search h5 {
+        width: 107px;
+        height: 32px;
+        color: #847C7C;
+        font-size: 24px;
+        line-height: 28px;
+        font-family: 'Work Sans',sans-serif;
+        position: absolute;
+        top: 10px;
+        left: 22.53px;
+    }
+    
+    
+    .search img {
+        width: 33.47px;
+        height: 33.47px;
+        position: absolute;
+        right: 1px;
+        top: 7px;
+    }
+.account {
+        width: 49px;
+        height: 49px;
+        position: absolute;
+        top: 34px;
+        left: 1731px;
+}
+
+
+
+.center {
+    width: 1920px;
+    height: 1269px;
+    background-color: #847C7C;
+}
+.center-header {
+    width: 1920px;
+    height: 43px;
+    position: relative;
+    padding-top: 37px;
+}
+.gtp {
+    width: 240px;
+    height: 43px;
+    position: absolute;
+    left: 140px;
+    color: white;
+    font: Bold 32px/38px Work Sans;
+}
+
+.gs {
+    width: 142px;
+    height: 28px;
+    position: absolute;
+    left: 457px;
+    top: 45px;
+    font:  24px/28px Work Sans;
+    text-align: center;
+    color: #636161;
+}
+
+.music {
+    width: 94px;
+    height: 32px;
+    position: absolute;
+    left: 676px;
+    top: 45px;
+    font: 24px/28px Work Sans;
+    text-align: center;
+    color: #636161;
+}
+
+.tgdv {
+    position: absolute;
+    top: 45px;
+    left: 848px;
+    width: 198px;
+    height: 32px;
+    font: 24px/28px Work Sans;
+    text-align: center;
+    color: #636161;
+}
+.center-content {
+    width: 1660px;
+    height: 1091px;
+    /* background: blue; */
+    margin-left: 140px;
+    margin-top: 37px;
+}
+.khoi {
+    width: 398px;
+    height: 260px;
+    position: relative;
+    float: left;
+    margin-right: 17px;
+    margin-bottom: 17px;
+}
+.khoi-tren {width: 398px;height: 233px;border-radius: 12px;}
+.p1,.p5,.p9,.p13 .khoi-tren{
+    background: transparent url(../images/unnamed.png) no-repeat;
+}
+.p2,.p6,.p10,.p14 .khoi-tren{
+    background: transparent url(../images/thoisutrua.png) no-repeat;
+}
+.p3,.p7,.p11,.p15 .khoi-tren{
+    background: transparent url(../images/news.png) no-repeat;
+}
+.p4,.p8,.p12,.p16 .khoi-tren{
+    
+    background: transparent url(../images/thoisusang.png) no-repeat;
+}
+.khoi-duoi {
+    width: 398px;
+    height: 74px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: transparent linear-gradient(180deg, #00000000 0%, #000000 50%, #000000 100%) no-repeat;
+}
+
+.khoi-duoi h5 {
+    width: 241px;
+    height: 23px;
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    color: white;
+    font: 19px/23px Work Sans;
+    opacity: 0.74;
+}
+
+
+
+.khoi-duoi h4 {
+    width: 124px;
+    height: 23px;
+    position: absolute;
+    left: 30px;
+    bottom: 43px;
+    font: Bold 19px/23px Work Sans;
+    text-align: left;
+    color: white;
+}
+.khoi-duoi .next-right {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    bottom: 2px;
+    left: 336px;
+    border: 2px solid #FFF;
+    border-radius: 25px;
+    opacity: 0.5;
+}
+
+.bottom {
+    width: 1920px;
+    height: 373px;
+    background: #000000;
+    color: #F7F7F7;
+    position: relative;
+}
+
+.bottom-info {
+    width: 950px;
+    height: 260px;
+    position: absolute;
+    left: 140px;
+    top: 65px;
+}
+.bottom-info h5 {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+    height: 37px;
+    text-align: left;
+    font: Bold 28px/28px Work Sans;
+}
+
+.bottom-info p {
+    width: 100%;
+    height: 32px;
+    width: 100%;
+    height: 32px;
+    text-align: left;
+    font: 24px/28px Work Sans;
+}
+
+.bottom-duoi {
+    margin-top: 66px;
+}
+
+
+
+
+
+
